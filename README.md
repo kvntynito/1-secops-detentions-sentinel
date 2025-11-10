@@ -4,11 +4,13 @@ This project showcases hands-on Security Operations (SecOps) skills using Micros
 It includes detection rules, incident investigations, log samples, and automation scripts used to identify and respond to suspicious activity in a simulated enterprise environment.
 
 ## 🎯 Objectives
-- Detection rules
-- Sentinel KQL queries
-- Incident investigations
-- Logs
-- Architecture diagram
+This project demonstrates real-world SecOps and SIEM capabilities, including:
+- Writing custom detection rules
+- Building Microsoft Sentinel KQL queries
+- Performing incident investigations
+- Ingesting and analyzing Windows, Linux, and Sysmon logs
+- Designing SecOps architecture diagrams
+- Using automation/scripts to enrich detections
 
 ## 📁 What’s Inside
 - `docs/` – reports, playbooks, baselines, diagrams
@@ -17,14 +19,30 @@ It includes detection rules, incident investigations, log samples, and automatio
 - `.github/` – issue/PR templates
 
 ## 🧪 Lab Setup (Quick Start)
-- Host: Proxmox/VMWare/Hyper-V/Docker (choose one)
-- VMs: Windows Server 2019, Ubuntu 22.04, Kali
-- Network: pfSense with two VLANs (Home / Lab)
-- Cloud: Azure free tier
-  - Microsoft Sentinel
-  - Log Analytics Workspace
-  - Defender for Cloud
-  - Azure AD / Entra ID
+**Host Options**
+- Proxmox
+- VMware
+- Hyper-V
+- Docker
+
+**Lab Machines**
+- Windows Server 2019
+- Ubuntu 22.04
+- Kali Linux
+
+**Network**
+- pfSense
+- Two VLANs:
+  - Home
+  - Lab
+
+**Cloud (Azure)**
+- Microsoft Sentinel
+- Log Analytics Workspace
+- Microsoft Defender for Cloud
+- Azure AD / Entra ID
+
+This entire environment can be recreated with minimal cost using an Azure free trial.
 You can recreate this with minimal cost using an Azure trial subscription.
 
 ## ▶️ How to Run (Testing & Execution)
