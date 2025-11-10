@@ -1,5 +1,4 @@
-The lab/ folder is where you store:
-
+The lab/ folder is where you store SIEM detecions:
 - sample logs
 - Azure Sentinel exports
 - JSON alerts
