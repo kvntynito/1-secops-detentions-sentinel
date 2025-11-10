@@ -1,4 +1,4 @@
-# Rule Name
+# 1st Rule Name
 Detection: Suspicious PowerShell EncodedCommand Usage
 
 # Description
