@@ -45,10 +45,31 @@ You don’t need all of these right away — prioritize process creation logs an
 ## For the 1st detection idea: Suspicious PowerShell EncodedCommand
 Use the template to create the detection file.
 
-*NOTE - do not overwite Detection_Rule_TEMPLATE - its used to make copies for more rules to be made.
+***NOTE - do not overwite Detection_Rule_TEMPLATE - its used to make copies for more rules to be made.**
 
-- rename the Detection_Rule2_TEMPLATE to Detection: Suspicious PowerShell EncodedCommand
+- Make a duplicate 'Detection_Rule_TEMPLATE' and rename to Detection: Suspicious PowerShell EncodedCommand (the first command exercise above)
 
 
 
 ## 4. Test it later in a VM with Sysmon + Windows logs when you’re ready.
+**Quick notes about testing this safely.**
+
+- For real validation, use a disposable VM (snapshot before test).
+- Use benign encoded commands (like encoding Write-Output "hello"). That simulates the technique without malicious payloads.
+- When you’re comfortable, you can run more advanced simulations in an isolated lab.
+
+## 5. Create the next five detection candidates — roadmap for Repo 1
+
+Build these next (short why + logs you’ll need):
+
+**1. RDP brute force / multiple failed logons** — Windows Security logs (4625), firewall logs.
+
+**2. New scheduled task creation** — Sysmon process create + task scheduler logs.
+
+**3. Service creation by unusual user / process** — Security logs / Sysmon + service change events.
+
+**4. Suspicious child process of explorer.exe or mshta launching cmd/powershell** — process lineage, 4688/Sysmon.
+
+**5. Unusual outbound network connections to rare IPs / domain beaconing** — firewall/proxy logs + Sysmon network connect.
+
+Build these as separate markdown detection files — same pattern I used above.
