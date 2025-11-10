@@ -1,0 +1,7 @@
+Learn the common attack technique categories (so you know what to hunt).
+
+Pick easy, high-value techniques to detect first.
+
+Use the template to create a detection file (I’ll give you one).
+
+Test it later in a VM with Sysmon + Windows logs when you’re ready.
