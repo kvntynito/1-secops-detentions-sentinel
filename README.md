@@ -1,10 +1,13 @@
 # <Project Title>
 
-> One-liner: what this repo demonstrates (e.g., “Azure Sentinel detections + incident write-ups”)
+SIEM + Detection Engineering Repo
 
 ## 🎯 Objectives
-- What you set out to learn/build
-- Which security domain(s) this covers (SIEM, IR, GRC, Cloud, etc.)
+- Detection rules
+- Sentinel KQL queries
+- Incident investigations
+- Logs
+- Architecture diagram
 
 ## 🧪 What’s Inside
 - `docs/` – reports, playbooks, baselines, diagrams
