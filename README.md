@@ -84,7 +84,6 @@ You can recreate this with minimal cost using an Azure trial subscription.
 ✅ Screenshots of alerts & incident timelines
 
 ## 🧠 What I Learned
-- Bullet points of concepts/skills you gained - Write what you learned about KQL, log sources, detection logic.
 - How SIEMs ingest & normalize logs
 - How to identify suspicious patterns in Windows, Linux, and Sysmon logs
 - Writing detection logic using KQL (Kusto Query Language)
